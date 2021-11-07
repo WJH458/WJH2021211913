@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知乎-有问题，就会有答案</title>
+    <style>
+       .div-position {
+           position: relative;
+           top: 50%;
+           bottom: 50%;
+           left: 50%;
+           right: 50%;
+       }
+        .enter-l {
+            color: gray;
+            font: 400 20px "Microsoft YaHei";
+            margin-left: 18px;
+        }
+                                                                                        /* 无法用edge打开 */
+        .enter-r {
+            border-bottom: 5px solid rgb(9, 81, 236);
+            margin-left: 25px;
+            font: 700 20px "Microsoft YaHei";
+                                                                                               /*为什么700+px后字变小了*/
+        }
+
+        .code {
+            width: 70px;
+            height: 70px;
+                                                                                              /*使用margin为什么所有span一起移动*/
+         /* margin-top: 25px;                                                               
+            margin-left: 170px; */
+            position: relative;
+            top: 25px;
+            left: 200px;
+        }
+
+        input {
+            margin-left: 18px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid rgb(201, 199, 199);
+            height: 50px;
+            width: 30%;
+            font-size: 18px;
+        }
+       
+       .a1:link {
+            color: rgb(78, 77, 77);
+       }
+       .a1:hover {
+           color: gray;
+       }
+       .a2:link {
+           color: gray;
+       }
+       .a2:hover {
+           color: rgb(92, 91, 91);
+       }
+       .a3 {
+           text-decoration: none;
+       }
+       ._input {
+           background-color: #06f;
+           color: #fff;
+           width: 90;
+           height: 35px;
+           font-size: 15px;
+           border-radius: 5px;
+       }
+       ._input:hover {
+           background-color: rgb(25, 98, 209);
+       }
+       pre {
+           font-size: 16px;
+           color: rgb(83, 81, 81);
+       }
+      .normal {
+          text-decoration: none;
+          font-size: 18px;
+          color: gray;
+      }
+      .picture {
+          width: 20px;
+          height: 20px;
+      }
+      ._div{
+           background-color: rgb(241, 238, 238);
+           width: 33%;
+           height: 60px;
+           margin-top: 20px;
+      }
+      .end {
+          text-decoration: none;
+          font-size: 18px;
+          color: rgb(25, 98, 209);
+          position: relative;
+          top: 25%;  
+          left: 17px;
+          }
+      .vary {
+        position: relative;
+          top: 32%;    
+          left: 17px;
+      }
+    
+    </style>
+</head>
+    
+<body>
+<div class="div-position">
+    <div>
+        <span class="enter-l">免密码登录</span>
+        <span class="enter-r">密码登录</span>
+        <span> <img src="半角二维码.png" class="code"> </span>
+    </div>
+    <form action="#" method="get" name="知乎登录界面">
+        <div>
+            <input type="text" name="phone or e-main" placeholder="手机号或邮箱" style=" margin-top: 45px;">
+        </div>
+        <div>
+            <input type="password" name="passord" placeholder="密码" style=" margin-top: 20px;" >
+        </div>
+        <div style="margin: 15px 1px 30px 18px"> 
+            <span> <a href="#" class="a1 a3">海外手机登录</a> </span> 
+            <span style="margin-left: 290px;"> <a href="#" target="_blank" class="a2 a3">忘记密码？</a> </span>
+        </div>
+        <div style="margin-bottom: 40px;">
+            <input type="submit" value="登录" class="_input">
+        </div>
+        <div style="margin-left: -85px;">
+           
+           <pre>
+               未注册手机验证后自动登录，注册即代表同意《知乎协议》
+              《隐私保护指引》
+           </pre>
+          <hr width="30%" style="margin-left: 6.5%;">
+        </div>
+        <div>
+            <span style="font-size: 18px;margin-left: 18px;">社交帐号登录</span>
+            <span style="margin-left: 110px;"> <img src="微信.png" class="picture"> <a href="#" class="normal">微信</a> </span>
+            <span style="margin-left: 20px;"> <img src="qq.png" class="picture"> <a href="#" class="normal">QQ</a> </span>
+            <span style="margin-left: 20px;"> <img src="微博.png" class="picture"> <a href="#" class="normal">微博</a> </span>
+        </div>
+        <div class="_div">
+            <span>
+                <img src="已开通.png" class="picture vary"> <a href="#" class="end">开通机构号</a>
+            </span>
+            <span style="margin-left: 12em;">
+                <img src="知乎.png"  class="picture vary"> <a href="#" class="end">下载知乎App</a>
+            </span>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
