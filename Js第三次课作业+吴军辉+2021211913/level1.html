@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 100%;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center;">
+    <div id='change'>
+        这是一行可以变换大小的字
+    </div>
+    <div>
+            <button>一键换色</button>
+            <button>增大字体</button>
+            <button>减小字体</button>
+    </div>
+</div>
+
+<script>
+    var change_fontsize = document.getElementsByTagName('button');
+    var words = document.getElementById('change');
+    change_fontsize[0].addEventListener('click',function(){
+        document.querySelector('html').style.background = 'red';
+    },true
+    )
+    var num=16;
+    change_fontsize[1].addEventListener('click',function(){
+        num+=4;
+        words.style.fontSize = num + 'px';
+   },true
+   )
+    change_fontsize[2].addEventListener('click',function(){
+        num-=4;
+        words.style.fontSize = num + 'px';
+    },true
+    )
+</script>
+</body>
+</html>

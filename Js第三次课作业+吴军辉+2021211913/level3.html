@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ._div{
+            border: 1px solid black;
+            width: 80em;
+            height: 30em;
+            margin : auto;
+        }
+        textarea{
+            width: 50em;
+            height: 10em;
+            /* display: block; */
+            margin: 0 0 0 20em;
+            font-size: large;
+        }
+        .liuyan{
+            font-size: 18px;
+            position: relative;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="_div"></div>
+    <textarea name="发送台" id="sends"></textarea>
+    <button class="liuyan">留言</button>
+      
+
+
+    <script>
+        var _div = document.querySelector('div');
+        var _textarea = document.querySelector('textarea');
+        var _button = document.querySelector('button');
+
+        _button.onclick = function(){
+            var text_content = _textarea.value;
+            _div.innerHTML+= '<p>前端咸鱼<。)#)))≦：'+text_content+'  <button>删除</button>  </p>';
+        }
+
+        _div.onclick = function(x){
+            if(x.target.nodeName=='BUTTON')
+            {
+                x.target.parentNode.innerHTML = '';
+            }
+            }
+    </script>
+</body>
+</html>
