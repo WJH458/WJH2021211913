@@ -1,0 +1,458 @@
+html,body{
+    height: 3000px;
+    width: 1700px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    /* overflow: hidden; */
+}
+/* html {
+    width: 1700px;
+    height: 3000px;
+    margin: 0 auto;
+} */
+* {
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+li {
+    list-style: none;
+}
+header {
+    background-color: #2c3e50;
+    height: 40px;
+    width: 100%;
+    font-size: 0;
+}
+header>div {
+    display: inline-block;
+    /* display:flex; */
+    box-sizing: border-box;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 2px solid #17202a ;
+    border-left: 2px solid #374d63 ;
+    font-size: 15px;
+}
+header>div:first-child {
+    margin-left: 260px;
+    padding-left: 0;
+}
+header>div>a {
+    color: #2cd5b4;
+}
+
+
+
+nav {
+    height: 92px;
+    width: 100%;
+}
+nav>div {
+    display: inline-block;
+    vertical-align: top;
+    /* overflow: hidden;        此处两个并列的行内块div的第二个与上方有空隙，用这两个似乎可以消除空隙  */
+    height: 92px;
+    font-size: 0;
+}
+.f_div {
+    margin-left: 260px;
+}
+.s_div {
+    margin-left: 330px;
+}
+.f_div>div {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 92px;
+}
+.s_div a {
+    color: #5d6e80;
+}
+.s_div>div {
+    /* margin: 0; */
+    padding-left: 35px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 92px;
+}
+.s_div>div>a:hover {
+    color: #2cd5b4;
+}
+.s_div img {
+    vertical-align: middle;
+    /* line-height: 92px; */
+}
+
+
+
+.back_picture {
+    height: 700px;
+    width: 100%;
+    /* background-color: #2cd5b4; */
+    /* background: url(images/2.png) no-repeat; */
+    /* opacity: 0.6;            这是给背景设置透明度的,字体也一并变换透明度   */
+    /* filter: brightness(60%);         字体一并变换亮度 X    */
+    background: linear-gradient(/*to right这里要加渐变位置*/ rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(images/2.png) no-repeat center center;
+                                 /* linear-gradient和radial-gradient可以解决字体一同变换的问题 */
+    background-size: 100% 100%;     
+    /* background-size: cover;  */
+    position: relative;
+}
+.textofpicture {
+    position: absolute;
+    top: 284px;
+    left: 485px;
+    color: #ffffff;
+    /* opacity:0.2;       这是给背景上的东西设置透明度的 */
+    font-size: 0;
+}
+.l_box {
+    position: absolute;
+    top: 310px;
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #90a1a8;
+    text-align: center;
+    line-height: 80px;
+}
+.r_box {
+    position: absolute;
+    top: 310px;
+    left: 1620px;
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #90a1a8;
+    text-align: center;
+    line-height: 80px;
+}
+/* .r_box {
+
+} */
+._f {
+    margin-left: 114px;
+    font-size: 40px;
+}
+._s {
+    font-size: 25px;
+}
+.f_box {
+    display: inline-block;
+    border: 3px solid #1dd2af;
+    border-radius: 5px;
+    height: 60px;
+    width: 240px;
+    background-color: #1dd2af;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 160px;
+    text-align: center;
+    line-height: 60px;
+}
+.s_box {
+    display: inline-block;
+    margin-left: 0px;
+    border: 3px solid #ffffff;
+    height: 60px;
+    width: 160px;
+    font-size: 20px;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.search {
+    height: 100px;
+    background-color: #2c3e50;
+    font-size: 0;
+    position: relative;
+}
+.l_search {
+    display: inline-block;
+    height: 100px;
+    width: 430px; 
+    border-right: 2px solid #3f5266
+}
+.l_search li:first-child {
+    font-size: 20px;
+    color: #9fb0c0;
+}
+.l_search li:last-child {
+    font-size: 25px;
+    color: #ffffff;
+}
+.l_search ul {
+    list-style: none;
+    padding-left: 260px;
+    padding-top: 20px;
+}
+.r_search {
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    /* vertical-align: middle; */
+    /* overflow: hidden; */
+}
+.triangle {
+    width: 0;  
+    height: 0;  
+    /* float: left;                                                              完全不懂，用三角形代替，三角形怎么做目前也不懂 */
+    border-top: 5px solid transparent;  
+    border-left: 10px solid #687888;  
+    border-bottom: 5px solid transparent; 
+    margin-top: 50px;
+    display: inline-block;
+}
+.wh {
+    display: inline-block;
+    font-size: 18px;
+    color: #91a2b2;
+    margin: 30px;
+    /* vertical-align: middle; */
+    /* overflow: auto; */
+}
+.search input {
+    /* width: 326px; */
+    width: 286px;
+    height: 40px;
+    font-size: 18px;
+    color: #91a2b2;
+}
+.search span {
+    position: relative;
+    left: -30px;
+}
+.search button {
+    width: 106px;
+    height: 44px;
+    margin: 30px;
+    background-color: #2cd5b4;
+    font-size: 18px;
+    color: #ffffff;
+}
+.holidayoffers ul {
+    list-style: none;
+    margin: 82px 680px;
+}
+.holidayoffers li:first-child {
+    font-size: 20px;
+    color: #2c3e50;
+    text-align: center;
+    /* font-weight: 700; */
+}
+.holidayoffers li:last-child {
+    font-size: 15px;
+    color: #626262;
+}
+.holidayoffers img {
+    height: 197px;
+    width: 260px;
+}
+.holidayoffers>div {
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 150px;
+    border: 6px solid #eeeeee;
+    background-color: #eeeeee;
+    color: #8e8e8e;
+}
+#specialpicture {
+    border: 6px solid #1dd2af;
+    background-color: #2c3e50;
+    color: #f2f3f4;
+}
+.holidayoffers span {
+    float: right;
+    transform: translate(-10px,-20px);
+    font-weight: 700;
+}
+
+
+
+.holidaytype {
+    height: 518px;
+    width: 100%;
+    background-color: #2cd5b4;
+    background: linear-gradient(/*to right这里要加渐变位置*/ rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(images/9.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.holidaytype li:first-child {
+    position: absolute;
+    list-style: none;
+    color: #ffffff;
+    font-size: 25px;
+    left: 760px;
+    top: 76px;
+}
+.holidaytype li:last-child {
+    position: absolute;
+    list-style: none;
+    color: #9eafc0;
+    font-size: 20px;
+    top: 116px;
+    left: 680px;
+}
+.holidaytype span {
+    margin-right: 35px;
+}
+.holidaytype div {
+    position: absolute;
+    top: 202px;
+    left: 283px;
+}
+
+
+
+.happyclients {
+    position: relative;
+}
+.happyclients>ul>li:first-child {
+    font-size: 25px;
+    color: #2c3e50;
+    position: absolute;
+    left: 760px;
+    top: 76px;
+}
+.happyclients>ul>li:last-child {
+    font-size: 20px;
+    color: #808080;
+    position: absolute;
+    top: 116px;
+    left: 625px;
+}
+.happyclients div {
+    height: 142px;
+    width: 475px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 15px
+}
+.happyclients div:nth-child(2) {
+    /* position: absolute; */
+    margin-left: 170px;
+    margin-top: 190px;
+    border: 2px solid #eeeeee;
+    color: #b2b2b2;
+}
+.happyclients div:nth-child(3){
+    border: 2px solid #dedede;
+    border-top: 5px solid #1dd2af;
+    color: #4d4d4d;
+}
+.happyclients div:nth-child(4){
+    border: 2px solid #eeeeee;
+    color: #b2b2b2;
+}
+.happyclients div li:nth-child(2) {
+    font-size: 20px;
+    color: #1dd2af;
+}
+.happyclients div li:nth-child(3){
+    font-size: 12px;
+}
+
+
+footer>div {
+    background-color: #2c3e50;
+    width: 100%;
+    height: 500px;
+    margin-top: 150px;
+    position: relative;
+    color: #ffffff;
+}
+footer>div>div {
+    height: 200px;
+    width: 230px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.newsletter {
+    position: absolute;
+    top: 60px;
+    left: 260px;
+}
+.latestnews {
+    position: absolute;
+    top: 60px;
+    left: 556px;
+}
+.tags {
+    position: absolute;
+    top: 60px;
+    left: 848px;
+}
+.address {
+    position: absolute;
+    top: 60px;
+    left: 1143px;
+}
+.footername {
+    color: #2cd5b4;
+    font-size: 22px;
+    line-height: 45px;
+}
+footer input {
+    height: 30px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+footer button {
+    height: 35px;
+    width: 45px;
+    background-color: #2cd5b4;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.latestnews ul li:nth-child(3){
+    margin-top: 20px;
+}
+.LI {
+    margin-left: 45px;
+}
+.tags li { 
+    display: inline-block;
+    border: 1px solid #ffffff;
+    margin: 2px;
+}
+.address li{
+    line-height: 25px;
+    display: inline-block;
+}
+hr {
+    border: 1px solid #394c5f;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+}
+.foot {
+    position: absolute;
+    top: 350px;
+    left: 575px;
+    height: 20px;
+    width: 540px;
+    font-size: 14px;
+    line-height: 35px;
+}
+.foot span:first-child {
+    color: #2cd5b4;
+}
+.foot span:last-child {
+    display: block;
+    text-align: center;
+    color: #7f91a2;
+}
